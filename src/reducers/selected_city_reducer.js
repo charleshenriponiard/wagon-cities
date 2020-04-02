@@ -1,11 +1,11 @@
 
-export default function citiesReducer(state, action) {
+export default function selectedCityReducer(state, action) {
   if (state === undefined) {
-    return [];
+    return null;
   }
 
   switch (action.type) {
-    case "SET_CITIES":
+    case "SELECTED_CITY":
       return action.payload;
     default:
       return state;
