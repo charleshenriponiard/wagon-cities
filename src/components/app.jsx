@@ -8,13 +8,11 @@ const cities = [
 ];
 
 const App = () => {
-
   return (
-    <div className="app">
+    <div className="app row">
       <CityList cities={cities} />
     </div>
   );
-
 };
 
 export default App;
